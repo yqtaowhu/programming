@@ -1,11 +1,11 @@
 
-  Here is my solutions to solve LeetCode problems,in most of problems ,have a main function to test,
-  
-  and each code have comment and some idea of me,
+  Here is my solutions to solve LeetCode problems,in most of problems ,have a main function to test ,
 
-  Welcome to connect with me when you confuse or you have some new ideas.
+  and each code have comment and some idea of me
 
-                                                                                      Thank you.
+  Welcome to connect with me when you confuse or you have some new ideas
+
+                                                                                         Thank you.
 LeetCode
 ========
 
