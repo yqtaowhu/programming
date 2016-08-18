@@ -39,18 +39,14 @@ public:
 class Solution {
 public:
     int rob(vector<int>& nums) {
-       int len=nums.size();
-       if (len==0) return 0;
-       if (len==1) return nums[0];
-       int pre=nums[0];
-       int preNext=max(nums[0],nums[1]);
-       if (len==2) return preNext;
-       int cur=0;
-       for (int i=2;i<len;i++) {
-           cur=max(pre+nums[i],preNext);
-           pre=preNext;
-           preNext=cur;
-       }
-       return cur;
+      int n = nums.size(); 
+      if (n < 2) return n ? nums[0] : 0;
+      int pre = 0, cur = nums[0];
+      for (int i = 1; i <= n-1; i++) {
+            int temp = max(pre + nums[i], cur);
+            pre = cur;
+            cur = temp;
+        }
+        return cur;
     }
 };
