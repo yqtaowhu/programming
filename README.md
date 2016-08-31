@@ -5,6 +5,9 @@
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |72|[Edit Distance](https://oj.leetcode.com/problems/edit-distance/)| [C++](./leetcodeSolution/editDistance/editDistance.cpp)|Hard|
+|47|[Permutations II](https://oj.leetcode.com/problems/permutations-ii/)| [C++](./LeetCodeSolution/permutations/permutations.II.cpp)|Hard|
+|46|[Permutations](https://oj.leetcode.com/problems/permutations/)| [C++](./LeetCodeSolutionp/permutations/permutations.cpp)|Medium|
+|31|[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)| [C++](./LeetCodeSolution/nextPermutation/nextPermutation.cpp)|Medium|
 |15|[3Sum](https://oj.leetcode.com/problems/3sum/)| [C++](./LeetCodeSolution/3Sum/3Sum.cpp)|Medium|
 |14|[Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)| [C++](./LeetCodeSolution/longestCommonPrefix/longestCommonPrefix.cpp)|Easy|
 |13|[Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)| [C++](./LeetCodeSolution/romanToInteger/romanToInteger.cpp)|Easy|
