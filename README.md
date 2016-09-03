@@ -8,6 +8,9 @@
 |47|[Permutations II](https://oj.leetcode.com/problems/permutations-ii/)| [C++](./LeetCodeSolutions/permutations/permutations.II.cpp)|Hard|
 |46|[Permutations](https://oj.leetcode.com/problems/permutations/)| [C++](./LeetCodeSolutions/permutations/permutations.cpp)|Medium|
 |31|[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)| [C++](./LeetCodeSolutions/nextPermutation/nextPermutation.cpp)|Medium|
+|23|[Merge k Sorted Lists](https://oj.leetcode.com/problems/merge-k-sorted-lists/)| [C++](./LeetCodeSolutions/MergeKSortedLists/MergeKSortedLists.cpp)|Hard|
+|22|[Generate Parentheses](https://oj.leetcode.com/problems/generate-parentheses/)| [C++](./LeetCodeSolutions/generateParentheses/generateParentheses.cpp)|Medium|
+|21|[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)| [C++](./LeetCodeSolutions/MergeTwoSortedList/MergeTwoSortedList.cpp)|Easy|
 |20|[Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)| [C++](./LeetCodeSolutions/validParentheses/validParentheses.cpp)|Easy|
 |19|[Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)| [C++](./LeetCodeSolutions/removeNthNodeFromEndOfList/removeNthNodeFromEndOfList.cpp)|Easy|
 |18|[4Sum](https://oj.leetcode.com/problems/4sum/)| [C++](./LeetCodeSolutions/4Sum/4Sum.cpp)|Medium|
