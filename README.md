@@ -8,6 +8,18 @@
 |47|[Permutations II](https://oj.leetcode.com/problems/permutations-ii/)| [C++](./LeetCodeSolutions/permutations/permutations.II.cpp)|Hard|
 |46|[Permutations](https://oj.leetcode.com/problems/permutations/)| [C++](./LeetCodeSolutions/permutations/permutations.cpp)|Medium|
 |31|[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)| [C++](./LeetCodeSolutions/nextPermutation/nextPermutation.cpp)|Medium|
+|35|[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)| [C++](./algorithms/cpp/searchInsertPosition/searchInsertPosition.cpp), [Java](./algorithms/java/src/searchInsertPosition/searchInsertPosition.java)|Medium|
+|34|[Search for a Range](https://oj.leetcode.com/problems/search-for-a-range/)| [C++](./algorithms/cpp/searchForRange/searchForRange.cpp), [Java](./algorithms/java/src/searchForRange/searchForRange.java)|Medium|
+|33|[Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)| [C++](./LeetCodeSolutions/searchInRotatedSortedArray/searchInRotatedSortedArray.cpp), [Java](./algorithms/java/src/searchInRotatedSortedArray/searchInRotatedSortedArray.java)|Hard|
+|32|[Longest Valid Parentheses](https://oj.leetcode.com/problems/longest-valid-parentheses/)| [C++](./LeetCodeSolutions/longestValidParentheses/longestValidParentheses.cpp)|Hard|
+|31|[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)| [C++](./LeetCodeSolutions/nextPermutation/nextPermutation.cpp)|Medium|
+|30|[Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)| [C++](./LeetCodeSolutions/substringWithConcatenationOfAllWords/substringWithConcatenationOfAllWords.cpp)|Hard|
+|29|[Divide Two Integers](https://oj.leetcode.com/problems/divide-two-integers/)| [C++](./LeetCodeSolutions/divideTwoInt/divideTwoInt.cpp)|Medium|
+|28|[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)| [C++](./LeetCodeSolutions/strStr/strStr.cpp)|Easy|
+|27|[Remove Element](https://oj.leetcode.com/problems/remove-element/)| [C++](./LeetCodeSolutions/removeElement/removeElement.cpp)|Easy|
+|26|[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)| [C++](./LeetCodeSolutions/removeDuplicatesFromSortedArray/removeDuplicatesFromSortedArray.cpp)|Easy|
+|25|[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)| [C++](./LeetCodeSolutions/reverseNodesInKGroup/reverseNodesInKGroup.cpp)|Hard|
+|24|[Swap Nodes in Pairs](https://oj.leetcode.com/problems/swap-nodes-in-pairs/)| [C++](./LeetCodeSolutions/swapNodesInPairs/swapNodesInPairs.cpp)|Medium|
 |23|[Merge k Sorted Lists](https://oj.leetcode.com/problems/merge-k-sorted-lists/)| [C++](./LeetCodeSolutions/MergeKSortedLists/MergeKSortedLists.cpp)|Hard|
 |22|[Generate Parentheses](https://oj.leetcode.com/problems/generate-parentheses/)| [C++](./LeetCodeSolutions/generateParentheses/generateParentheses.cpp)|Medium|
 |21|[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)| [C++](./LeetCodeSolutions/MergeTwoSortedList/MergeTwoSortedList.cpp)|Easy|
