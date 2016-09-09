@@ -5,12 +5,23 @@
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |72|[Edit Distance](https://oj.leetcode.com/problems/edit-distance/)| [C++](./leetcodeSolutions/editDistance/editDistance.cpp)|Hard|
+|50|["Pow(x, n)"](https://oj.leetcode.com/problems/powx-n/)| [C++](./LeetCodeSolutions/pow/pow.cpp)|Medium|
+|49|[Group Anagrams](https://oj.leetcode.com/problems/anagrams/)| [C++](./LeetCodeSolutions/anagrams/GroupAnagrams.cpp)|Medium|
+|48|[Rotate Image](https://oj.leetcode.com/problems/rotate-image/)| [C++](./LeetCodeSolutions/rotateImage/rotateImage.cpp)|Medium|
 |47|[Permutations II](https://oj.leetcode.com/problems/permutations-ii/)| [C++](./LeetCodeSolutions/permutations/permutations.II.cpp)|Hard|
 |46|[Permutations](https://oj.leetcode.com/problems/permutations/)| [C++](./LeetCodeSolutions/permutations/permutations.cpp)|Medium|
-|31|[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)| [C++](./LeetCodeSolutions/nextPermutation/nextPermutation.cpp)|Medium|
-|35|[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)| [C++](./algorithms/cpp/searchInsertPosition/searchInsertPosition.cpp), [Java](./algorithms/java/src/searchInsertPosition/searchInsertPosition.java)|Medium|
-|34|[Search for a Range](https://oj.leetcode.com/problems/search-for-a-range/)| [C++](./algorithms/cpp/searchForRange/searchForRange.cpp), [Java](./algorithms/java/src/searchForRange/searchForRange.java)|Medium|
-|33|[Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)| [C++](./LeetCodeSolutions/searchInRotatedSortedArray/searchInRotatedSortedArray.cpp), [Java](./algorithms/java/src/searchInRotatedSortedArray/searchInRotatedSortedArray.java)|Hard|
+|45|[Jump Game II](https://oj.leetcode.com/problems/jump-game-ii/)| [C++](./LeetCodeSolutions/jumpGame/jumpGame.II.cpp)|Hard|
+|44|[Wildcard Matching](https://oj.leetcode.com/problems/wildcard-matching/)| [C++](./LeetCodeSolutionss/multiplyStrings/multiplyStrings.cpp)|Medium|
+|42|[Trapping Rain Water](https://oj.leetcode.com/problems/trapping-rain-water/)| [C++](./LeetCodeSolutions/trappingRainWater/trappingRainWater.cpp)|Hard|
+|41|[First Missing Positive](https://oj.leetcode.com/problems/first-missing-positive/)| [C++](./LeetCodeSolutions/firstMissingPositive/firstMissingPositive.cpp)|Hard|
+|40|[Combination Sum II](https://oj.leetcode.com/problems/combination-sum-ii/)| [C++](./LeetCodeSolutions/combinationSum/combinationSum.II.cpp)|Medium|
+|39|[Combination Sum](https://oj.leetcode.com/problems/combination-sum/)| [C++](./LeetCodeSolutions/combinationSum/combinationSum.cpp)|Medium|
+|38|[Count and Say](https://oj.leetcode.com/problems/count-and-say/)| [C++](./LeetCodeSolutions/countAndSay/countAndSay.cpp)|Easy|
+|37|[Sudoku Solver](https://oj.leetcode.com/problems/sudoku-solver/)| [C++](./LeetCodeSolutions/sudokuSolver/sudokuSolver.cpp)|Hard|
+|36|[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)| [C++](./LeetCodeSolutions/validSudoku/validSudoku.cpp)|Easy|
+|35|[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)| [C++](./algorithms/cpp/searchInsertPosition/searchInsertPosition.cpp)|Medium|
+|34|[Search for a Range](https://oj.leetcode.com/problems/search-for-a-range/)| [C++](./LeetCodeSolutions/searchForRange/searchForRange.cpp)|Medium|
+|33|[Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)| [C++](./LeetCodeSolutions/searchInRotatedSortedArray/searchInRotatedSortedArray.cpp)|Hard|
 |32|[Longest Valid Parentheses](https://oj.leetcode.com/problems/longest-valid-parentheses/)| [C++](./LeetCodeSolutions/longestValidParentheses/longestValidParentheses.cpp)|Hard|
 |31|[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)| [C++](./LeetCodeSolutions/nextPermutation/nextPermutation.cpp)|Medium|
 |30|[Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)| [C++](./LeetCodeSolutions/substringWithConcatenationOfAllWords/substringWithConcatenationOfAllWords.cpp)|Hard|
