@@ -27,20 +27,13 @@ public:
 		tail->next = l1 ? l1 : l2;
 		return dummy.next;
 	}
-	ListNode* mergeKLists(vector<ListNode*>& lists)
-	{
+	ListNode* mergeKLists(vector<ListNode*>& lists) {
 		const size_t k = lists.size();
-
 		if (k == 0) return NULL;
 		if (k == 1) return lists[0];
-
-		for (size_t i = 1; i < k; i = i * 2)
-		{
+		for (size_t i = 1; i < k; i = i * 2) 
 			for (size_t j = 0; j < k - i; j += i * 2)
-			{
 				lists[j] = mergeTwoLists(lists[j], lists[i + j]);
-			}
-		}
 		return lists[0];
 	}
 };
