@@ -5,6 +5,26 @@
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |72|[Edit Distance](https://oj.leetcode.com/problems/edit-distance/)| [C++](./leetcodeSolutions/editDistance/editDistance.cpp)|Hard|
+|70|[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)| [C++](./LeetCodeSolutions/climbStairs/climbStairs.cpp)|Easy|
+|69|[Sqrt(x)](https://oj.leetcode.com/problems/sqrtx/)| [C++](./LeetCodeSolutions/sqrt/sqrt.cpp)|Medium|
+|68|[Text Justification](https://oj.leetcode.com/problems/text-justification/)| [C++](./LeetCodeSolutions/textJustification/textJustification.cpp)|Hard|
+|67|[Add Binary](https://oj.leetcode.com/problems/add-binary/)| [C++](./LeetCodeSolutions/addBinary/addBinary.cpp)|Easy|
+|66|[Plus One](https://oj.leetcode.com/problems/plus-one/)| [C++](./LeetCodeSolutions/plusOne/plusOne.cpp)|Easy|
+|65|[Valid Number](https://oj.leetcode.com/problems/valid-number/)| [C++](./LeetCodeSolutions/validNumber/validNumber.cpp)|Easy|
+|64|[Minimum Path Sum](https://oj.leetcode.com/problems/minimum-path-sum/)| [C++](./LeetCodeSolutions/minimumPathSum/minimumPathSum.cpp)|Medium|
+|63|[Unique Paths II](https://oj.leetcode.com/problems/unique-paths-ii/)| [C++](./LeetCodeSolutions/uniquePaths/uniquePaths.II.cpp)|Medium|
+|62|[Unique Paths](https://oj.leetcode.com/problems/unique-paths/)| [C++](./LeetCodeSolutions/uniquePaths/uniquePaths.cpp)|Medium|
+|61|[Rotate List](https://oj.leetcode.com/problems/rotate-list/)| [C++](./LeetCodeSolutions/rotateList/rotateList.cpp)|Medium|
+|60|[Permutation Sequence](https://oj.leetcode.com/problems/permutation-sequence/)| [C++](./LeetCodeSolutions/permutationSequence/permutationSequence.cpp)|Medium|
+|59|[Spiral Matrix II](https://oj.leetcode.com/problems/spiral-matrix-ii/)| [C++](./LeetCodeSolutions/spiralMatrix/spiralMatrix.II.cpp)|Medium|
+|58|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)| [C++](./LeetCodeSolutions/lengthOfLastWord/lengthOfLastWord.cpp)|Easy|
+|57|[Insert Interval](https://oj.leetcode.com/problems/insert-interval/)| [C++](./LeetCodeSolutions/insertInterval/insertInterval.cpp)|Hard|
+|56|[Merge Intervals](https://oj.leetcode.com/problems/merge-intervals/)| [C++](./LeetCodeSolutions/mergeIntervals/mergeIntervals.cpp)|Hard|
+|55|[Jump Game](https://oj.leetcode.com/problems/jump-game/)| [C++](./LeetCodeSolutions/jumpGame/jumpGame.cpp)|Medium|
+|54|[Spiral Matrix](https://oj.leetcode.com/problems/spiral-matrix/)| [C++](./LeetCodeSolutions/spiralMatrix/spiralMatrix.cpp)|Medium|
+|53|[Maximum Subarray](https://oj.leetcode.com/problems/maximum-subarray/)| [C++](./LeetCodeSolutions/maximumSubArray/maximumSubArray.cpp)|Medium|
+|52|[N-Queens II](https://oj.leetcode.com/problems/n-queens-ii/)| [C++](./LeetCodeSolutions/nQueens/nQueuens.II.cpp)|Hard|
+|51|[N-Queens](https://oj.leetcode.com/problems/n-queens/)| [C++](./LeetCodeSolutions/nQueens/nQueuens.cpp)|Hard|
 |50|["Pow(x, n)"](https://oj.leetcode.com/problems/powx-n/)| [C++](./LeetCodeSolutions/pow/pow.cpp)|Medium|
 |49|[Group Anagrams](https://oj.leetcode.com/problems/anagrams/)| [C++](./LeetCodeSolutions/anagrams/GroupAnagrams.cpp)|Medium|
 |48|[Rotate Image](https://oj.leetcode.com/problems/rotate-image/)| [C++](./LeetCodeSolutions/rotateImage/rotateImage.cpp)|Medium|
@@ -19,7 +39,7 @@
 |38|[Count and Say](https://oj.leetcode.com/problems/count-and-say/)| [C++](./LeetCodeSolutions/countAndSay/countAndSay.cpp)|Easy|
 |37|[Sudoku Solver](https://oj.leetcode.com/problems/sudoku-solver/)| [C++](./LeetCodeSolutions/sudokuSolver/sudokuSolver.cpp)|Hard|
 |36|[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)| [C++](./LeetCodeSolutions/validSudoku/validSudoku.cpp)|Easy|
-|35|[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)| [C++](./algorithms/cpp/searchInsertPosition/searchInsertPosition.cpp)|Medium|
+|35|[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)| [C++](./LeetCodeSolutions/searchInsertPosition/searchInsertPosition.cpp)|Medium|
 |34|[Search for a Range](https://oj.leetcode.com/problems/search-for-a-range/)| [C++](./LeetCodeSolutions/searchForRange/searchForRange.cpp)|Medium|
 |33|[Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)| [C++](./LeetCodeSolutions/searchInRotatedSortedArray/searchInRotatedSortedArray.cpp)|Hard|
 |32|[Longest Valid Parentheses](https://oj.leetcode.com/problems/longest-valid-parentheses/)| [C++](./LeetCodeSolutions/longestValidParentheses/longestValidParentheses.cpp)|Hard|
