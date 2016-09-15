@@ -25,7 +25,7 @@ public:
         for (;cur!=nums.end()-1;) {
             auto next=cur+1;
             if (*cur==*next)
-                nums.erase(cur);
+                cur=nums.erase(cur);   //注意迭代器会失效
             else ++cur;
         }
         return nums.size();
