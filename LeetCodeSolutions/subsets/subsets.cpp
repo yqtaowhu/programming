@@ -40,7 +40,7 @@ void subsets(vector<int>& nums, vector<int>& tmp, vector<vector<int>>& res, int 
 }
 vector<vector<int>> subsets(vector<int>& nums) {
 	vector<vector<int>>res;
-	vector<int>tmp; bool first=false;
+	vector<int>tmp;
 	subsets(nums, tmp, res, 0);
 	return res;
 }
