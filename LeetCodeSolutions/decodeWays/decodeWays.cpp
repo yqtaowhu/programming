@@ -22,33 +22,19 @@
 * 
 *               
 **********************************************************************************/
-#include <iostream>
-#include <vector>
-#include<string>
-using namespace std;
-int numDecodings(string s) {
-	int n = s.size();
-	if (n == 0 || s[0] == '0') return 0;
-	if (n == 1) return 1;
-	int pre2 = 1, pre1 = 1;
-	int cur;
-	for (int i = 1; i < n; ++i) {
-		cur = 0;
-		int first = (s[i] - '0');
-		int second = stoi(s.substr(i - 1, 2));
-		if (1 <= first && first <= 9)
-			cur += pre1;
-		if (10 <= second && second <= 26)
-			cur += pre2;
-		pre2 = pre1;
-		pre1 = cur;
+class Solution {
+public:
+  int numDecodings(string s) {
+    if (s.empty()) return 0;
+	vector<int> dp(s.size() + 1, 0);
+	dp[s.size()] = 1;
+	for (int i = s.size() - 1; i >= 0; i--) {
+		if (s[i] == '0') { dp[i] = 0; continue; }
+		dp[i] = dp[i + 1];
+		if (i < s.size() - 1 && (s[i] == '1' || (s[i]=='2' && s[i + 1] < '7'))) {
+			dp[i] += dp[i + 2];
+		}
 	}
-	return cur;
-}
-int main()
-{
-	cout << numDecodings("12") << endl;  //2
-	cout << numDecodings("343") << endl; //1
-	cout << numDecodings("123") << endl; //3
-	cout << numDecodings("043") << endl; //0
-}
+	return dp[0];
+  }
+};
