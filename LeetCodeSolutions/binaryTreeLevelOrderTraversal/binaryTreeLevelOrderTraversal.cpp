@@ -83,3 +83,26 @@ public:
     return vv;
 }
 };
+//i think this wany is more effective
+class Solution {
+public:
+    vector<vector<int>> levelOrder(TreeNode* root) {
+        if (!root) return vector<vector<int>>();
+        vector<vector<int>> res;
+        queue<TreeNode*> que;
+        que.push(root);
+        while(!que.empty()) {
+            int size=que.size();
+            vector<int>row(size);
+            for (int i=0;i<size;i++) {
+                TreeNode* node=que.front();
+                que.pop();
+                row[i]=node->val;
+                if (node->left) que.push(node->left);
+                if (node->right) que.push(node->right);
+            }
+            res.push_back(row);
+        }
+        return res;
+    }
+};

@@ -37,7 +37,6 @@ public:
         //在分别遍历左子树，和右子树
         return abs(left - right) <= 1 && isBalanced(root->left) && isBalanced(root->right);    
     }
-
 };
 
 //Notes: 

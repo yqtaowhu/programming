@@ -59,6 +59,31 @@ public:
         return result;
     }
 };
-
+// more effective
+class Solution {
+public:
+   vector<vector<int> > zigzagLevelOrder(TreeNode* root) {
+    if (root == NULL) return vector<vector<int> > ();
+    vector<vector<int> > result;
+    queue<TreeNode*> que;
+    que.push(root);
+    bool leftToRight = true;
+    while ( !que.empty()) {
+        int size = que.size();
+        vector<int> row(size);
+        for (int i = 0; i < size; i++) {       //travesal a level
+            TreeNode* node = que.front();
+            que.pop();
+            int index = (leftToRight) ? i : (size - 1 - i);
+            row[index] = node->val;
+            if (node->left)  que.push(node->left);
+            if (node->right) que.push(node->right);
+        }
+        leftToRight = !leftToRight;
+        result.push_back(row);
+    }
+    return result;
+}
+};
 
 

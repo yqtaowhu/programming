@@ -41,43 +41,25 @@
 * 
 *               
 **********************************************************************************/
-//this problem is very very similar with before,just reverse the vector
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 public:
     vector<vector<int>> levelOrderBottom(TreeNode* root) {
     vector< vector<int> > vv;
     if(root == NULL) return vv;
-
-    int level = 0; // current level.
-    TreeNode *last = root; // last node of currrent level.
-    queue<TreeNode*> q;
-
-    q.push(root);
-    vv.push_back(vector<int>());
-    while(!q.empty()) {
-        TreeNode *p = q.front();
-        q.pop();
-
-        vv[level].push_back(p->val);
-        if(p->left ) q.push(p->left);
-        if(p->right) q.push(p->right);
-
-        if(p == last) {
-            level++;
-            last = q.back();
-            vv.push_back(vector<int>()); // new buffer for next row.
+    queue<TreeNode*> que;
+    que.push(root);
+    while(!que.empty()) {
+        int size=que.size();
+        vector<int>row(size);
+        for (int i=0;i<size;i++) {
+            TreeNode *p = que.front();
+            que.pop();
+            row[i]=p->val;
+            if (p->left) que.push(p->left);
+            if (p->right) que.push(p->right);
         }
+        vv.push_back(row);
     }
-    vv.pop_back();
     reverse(vv.begin(), vv.end());
     return vv;
     }
