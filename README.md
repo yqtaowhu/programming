@@ -4,9 +4,29 @@
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|120|[Triangle](https://oj.leetcode.com/problems/triangle/)| [C++](./LeetCodeSolutions/triangle/triangle.cpp)|Medium|
+|119|[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)| [C++](./LeetCodeSolutions/pascalTriangle/pascalTriangle.II.cpp)|Easy|
+|118|[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)| [C++](./LeetCodeSolutions/pascalTriangle/pascalTriangle.cpp)|Easy|
+|117|[Populating Next Right Pointers in Each Node II](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)| [C++](./LeetCodeSolutions/populatingNextRightPointersInEachNode/populatingNextRightPointersInEachNode.II.cpp)|Hard|
+|116|[Populating Next Right Pointers in Each Node](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/)| [C++](./LeetCodeSolutions/populatingNextRightPointersInEachNode/populatingNextRightPointersInEachNode.cpp)|Medium|
+|115|[Distinct Subsequences](https://oj.leetcode.com/problems/distinct-subsequences/)| [C++](./LeetCodeSolutions/distinctSubsequences/distinctSubsequences.cpp)|Hard|
+|114|[Flatten Binary Tree to Linked List](https://oj.leetcode.com/problems/flatten-binary-tree-to-linked-list/)| [C++](./LeetCodeSolutions/flattenBinaryTreeToLinkedList/flattenBinaryTreeToLinkedList.cpp)|Medium|
+|113|[Path Sum II](https://oj.leetcode.com/problems/path-sum-ii/)| [C++](./LeetCodeSolutions/pathSum/pathSum.II.cpp)|Medium|
+|112|[Path Sum](https://oj.leetcode.com/problems/path-sum/)| [C++](./LeetCodeSolutions/pathSum/pathSum.cpp)|Easy|
+|111|[Minimum Depth of Binary Tree](https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/)| [C++](./LeetCodeSolutions/minimumDepthOfBinaryTree/minimumDepthOfBinaryTree.cpp)|Easy|
+|110|[Balanced Binary Tree](https://oj.leetcode.com/problems/balanced-binary-tree/)| [C++](./LeetCodeSolutions/balancedBinaryTree/balancedBinaryTree.cpp)|Easy|
+|109|[Convert Sorted List to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)| [C++](./LeetCodeSolutions/convertSortedListToBinarySearchTree/convertSortedListToBinarySearchTree.cpp)|Medium|
+|108|[Convert Sorted Array to Binary Search Tree](https://oj.leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)| [C++](./LeetCodeSolutions/convertSortedArrayToBinarySearchTree/convertSortedArrayToBinarySearchTree.cpp)|Medium|
+|107|[Binary Tree Level Order Traversal II](https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/)| [C++](./LeetCodeSolutions/binaryTreeLevelOrderTraversal/binaryTreeLevelOrderTraversal.II.cpp)|Easy|
+|106|[Construct Binary Tree from Inorder and Postorder Traversal](https://oj.leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)| [C++](./LeetCodeSolutions/constructBinaryTreeFromInorderAndPostorderTraversal/constructBinaryTreeFromInorderAndPostorderTraversal.cpp)|Medium|
+|105|[Construct Binary Tree from Preorder and Inorder Traversal](https://oj.leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)| [C++](./LeetCodeSolutions/constructBinaryTreeFromPreorderAndInorderTraversal/constructBinaryTreeFromPreorderAndInorderTraversal.cpp)|Medium|
+|104|[Maximum Depth of Binary Tree](https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/)| [C++](./LeetCodeSolutions/maximumDepthOfBinaryTree/maximumDepthOfBinaryTree.cpp)|Easy|
+|103|[Binary Tree Zigzag Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)| [C++](./LeetCodeSolutions/binaryTreeZigzagLevelOrderTraversal/binaryTreeZigzagLevelOrderTraversal.cpp)|Medium|
+|102|[Binary Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/)| [C++](./LeetCodeSolutions/binaryTreeLevelOrderTraversal/binaryTreeLevelOrderTraversal.cpp)|Easy|
+|101|[Symmetric Tree](https://oj.leetcode.com/problems/symmetric-tree/)| [C++](./LeetCodeSolutions/symmetricTree/symmetricTree.cpp)|Easy|
 |100|[Same Tree](https://oj.leetcode.com/problems/same-tree/)| [C++](./LeetCodeSolutions/sameTree/sameTree.cpp)|Easy|
 |99|[Recover Binary Search Tree](https://oj.leetcode.com/problems/recover-binary-search-tree/)| [C++](./LeetCodeSolutions/recoverBinarySearchTree/recoverBinarySearchTree.cpp)|Hard|
-|98|[Validate Binary Search Tree](https://oj.leetcode.com/problems/validate-binary-search-tree/)| [C++](./LeetCodeSolutions/validateBinarySearchTree/validateBinarySearchTree.cpp), [Java](./algorithms/java/src/validateBinarySearchTree/validateBinarySearchTree.java)|Medium|
+|98|[Validate Binary Search Tree](https://oj.leetcode.com/problems/validate-binary-search-tree/)| [C++](./LeetCodeSolutions/validateBinarySearchTree/validateBinarySearchTree.cpp)|Medium|
 |97|[Interleaving String](https://oj.leetcode.com/problems/interleaving-string/)| [C++](./LeetCodeSolutions/interleavingString/interleavingString.cpp)|Hard|
 |96|[Unique Binary Search Trees](https://oj.leetcode.com/problems/unique-binary-search-trees/)| [C++](./LeetCodeSolutions/uniqueBinarySearchTrees/uniqueBinarySearchTrees.cpp)|Medium|
 |95|[Unique Binary Search Trees II](https://oj.leetcode.com/problems/unique-binary-search-trees-ii/)| [C++](./LeetCodeSolutions/uniqueBinarySearchTrees/uniqueBinarySearchTrees.II.cpp)|Medium|
@@ -30,7 +50,7 @@
 |77|[Combinations](https://oj.leetcode.com/problems/combinations/)| [C++](./LeetCodeSolutions/combinations/combinations.cpp)|Medium|
 |76|[Minimum Window Substring](https://oj.leetcode.com/problems/minimum-window-substring/)| [C++](./LeetCodeSolutions/minimumWindowSubstring/minimumWindowSubstring.cpp)|Hard|
 |75|[Sort Colors](https://oj.leetcode.com/problems/sort-colors/)| [C++](./LeetCodeSolutions/sortColors/sortColors.cpp)|Medium|
-|74|[Search a 2D Matrix](https://oj.leetcode.com/problems/search-a-2d-matrix/)| [C++](./LeetCodeSolutions/search2DMatrix/search2DMatrix.cpp), [Java](./algorithms/java/src/search2DMatrix/search2DMatrix.java)|Medium|
+|74|[Search a 2D Matrix](https://oj.leetcode.com/problems/search-a-2d-matrix/)| [C++](./LeetCodeSolutions/search2DMatrix/search2DMatrix.cpp)|Medium|
 |73|[Set Matrix Zeroes](https://oj.leetcode.com/problems/set-matrix-zeroes/)| [C++](./LeetCodeSolutions/setMatrixZeroes/setMatrixZeroes.cpp)|Medium|
 |72|[Edit Distance](https://oj.leetcode.com/problems/edit-distance/)| [C++](./leetcodeSolutions/editDistance/editDistance.cpp)|Hard|
 |71|[Simplify Path](https://oj.leetcode.com/problems/simplify-path/)| [C++](./leetcodeSolutions/simplifyPath/simplifyPath.cpp)|Medium|
