@@ -1,4 +1,4 @@
-// Date   : 2016.07.27
+// Date   : 2016.09.19
 // Author : yqtao
 // https://github.com/yqtaowhu
 
@@ -33,19 +33,6 @@
 *               
 **********************************************************************************/
 
-/**
- * Definition for binary tree
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
-
-//
-// We can convert the BST to a sorted array,  then we can find the two nodes which missed the order.
-// To cover the BST to sorted array, we needn't use an extra array, we just traverse the tree in order.
 class Solution {
     TreeNode* first=NULL;
     TreeNode* second=NULL;
