@@ -15,26 +15,20 @@
 *               
 **********************************************************************************/
 
-#include <stdlib.h>
-#include <vector>
-#include <iostream>
-using namespace std;
+	//o(n) space
+	vector<int> getRow(int rowIndex) {
+		vector<int> v(rowIndex+1, 0);
+		v[0]=1;
 
-vector<int> getRow(int rowIndex) {
-    vector<int> v(rowIndex+1, 0);
-    v[0]=1;
-
-    for (int i=0; i<rowIndex; i++){
-        for(int j=i+1; j>0; j--){
-           v[j] += v[j-1];
-        } 
-    }
-    return v;
+		for (int i=0; i<rowIndex; i++){
+			for(int j=i+1; j>0; j--){
+			v[j] += v[j-1];
+			} 
+		}
+		return v;
     
-}
-
-class Solution {
-public:
+	}
+	//O(n^2)
     vector<int> getRow(int rowIndex) {
         vector<vector<int>> res(rowIndex+1);
         for (int i=0;i<=rowIndex;i++) {
@@ -45,4 +39,3 @@ public:
         }
         return res[rowIndex];
     }
-};
