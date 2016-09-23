@@ -4,6 +4,16 @@
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|130|[Surrounded Regions](https://oj.leetcode.com/problems/surrounded-regions/)| [C++](./LeetCodeSolutions/surroundedRegions/surroundedRegions.cpp)|Medium|
+|129|[Sum Root to Leaf Numbers](https://oj.leetcode.com/problems/sum-root-to-leaf-numbers/)| [C++](./LeetCodeSolutions/sumRootToLeafNumber/sumRootToLeafNumber.cpp)|Medium|
+|128|[Longest Consecutive Sequence](https://oj.leetcode.com/problems/longest-consecutive-sequence/)| [C++](./LeetCodeSolutions/longestConsecutiveSequence/longestConsecutiveSequence.cpp)|Hard|
+|127|[Word Ladder](https://oj.leetcode.com/problems/word-ladder/)| [C++](./LeetCodeSolutions/wordLadder/wordLadder.cpp)|Medium|
+|126|[Word Ladder II](https://oj.leetcode.com/problems/word-ladder-ii/)| [C++](./LeetCodeSolutions/wordLadder/wordLadder.II.cpp)|Hard|
+|125|[Valid Palindrome](https://oj.leetcode.com/problems/valid-palindrome/)| [C++](./LeetCodeSolutions/validPalindrome/validPalindrome.cpp)|Easy|
+|124|[Binary Tree Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)| [C++](./LeetCodeSolutions/binaryTreeMaximumPathSum/binaryTreeMaximumPathSum.cpp)|Hard|
+|123|[Best Time to Buy and Sell Stock III](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)| [C++](./LeetCodeSolutions/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.III.cpp)|Hard|
+|122|[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [C++](./LeetCodeSolutions/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.II.cpp)|Medium|
+|121|[Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [C++](./LeetCodeSolutions/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.cpp)|Medium|
 |120|[Triangle](https://oj.leetcode.com/problems/triangle/)| [C++](./LeetCodeSolutions/triangle/triangle.cpp)|Medium|
 |119|[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)| [C++](./LeetCodeSolutions/pascalTriangle/pascalTriangle.II.cpp)|Easy|
 |118|[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)| [C++](./LeetCodeSolutions/pascalTriangle/pascalTriangle.cpp)|Easy|
