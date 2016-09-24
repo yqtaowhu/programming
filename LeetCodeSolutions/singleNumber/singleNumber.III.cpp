@@ -1,7 +1,7 @@
-// Date   : 2016.08.24
+// Date   : 2016.09.24
 // Author : yqtao
 // https://github.com/yqtaowhu
-
+//reference:https://discuss.leetcode.com/topic/21605/accepted-c-java-o-n-time-o-1-space-easy-solution-with-detail-explanations
 /*************************************************************************************** 
  *
  * Given an array of numbers nums, in which exactly two elements appear only once and 
@@ -24,29 +24,20 @@
  ***************************************************************************************/
 class Solution {
 public:
-    vector<int> singleNumber(vector<int>& nums) {
-        int allxor = 0;
-        for (int n : nums) {
-            allxor ^= n;
+ vector<int> singleNumber(vector<int>& nums)  {
+        // Pass 1 : 
+        // Get the XOR of the two numbers we need to find
+        int diff = accumulate(nums.begin(), nums.end(), 0, bit_xor<int>());
+        // Get its last set bit
+        diff &= -diff;          //this is the right 1-bit,equal diff&=~(diff-1).
+        // Pass 2 :
+        vector<int> rets = {0, 0}; // this vector stores the two numbers we will return
+        for (int num : nums) {
+            if ((num & diff) == 0) // the bit is not set
+                rets[0] ^= num;
+            else // the bit is set
+                rets[1] ^= num;
         }
-        int mask = 1;
-        while ( (mask & allxor) == 0 ) {
-            mask <<= 1;
-        }
-
-        int zero = 0;
-        int one = 0;
-        for (int n : nums) {
-            if (n & mask ){
-                one ^= n;
-            }else {
-                zero ^= n;
-            }
-        }
-        
-        vector<int> result;
-        result.push_back(zero);
-        result.push_back(one);
-        return result;
+        return rets;
     }
 };
