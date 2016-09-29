@@ -79,7 +79,7 @@ public:
 		    TreeNode* node=st.back();
 		    st.pop_back();
 		    v.push_back(node);
-		    if (node&&node->right) st.push_back(node->right);
+		    if (node&&node->right) st.push_back(node->right);   //先右后左
 		    if (node&&node->left) st.push_back(node->left);
 		}
 		v.push_back(nullptr);
