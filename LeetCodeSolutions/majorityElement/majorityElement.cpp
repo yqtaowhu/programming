@@ -24,7 +24,23 @@ public:
         return major;
     }
 };
-//using hashtable O 
+//
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+       int x=0,cx=0;
+       for (auto c:nums) {
+           if (x==c) cx++;      
+           else if (!cx) x=c,cx=1;
+           else --cx;
+       }
+       cx=0;
+       for (auto c:nums)          //检验正确性。
+           if(x==c) cx++;
+       return cx>nums.size()/2 ? x : -1;
+    }
+};
+//using hashtable 
 class Solution {
 public:
      int majorityElement(vector<int>& nums) {
