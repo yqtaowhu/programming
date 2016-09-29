@@ -19,12 +19,6 @@
  * Credits:Special thanks to @ifanchu for adding this problem and creating all test cases.
  *               
  **********************************************************************************/
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <iostream>
-#include <string>
-using namespace std;
 class Solution {
 public:
    string convertToTitle(int n) {
