@@ -4,6 +4,46 @@
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|170|[Two Sum III - Data structure design](https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/) &hearts; | [C++](./LeetCodeSolutions/twoSum/twoSum.III.cpp)|Easy|
+|169|[Majority Element](https://oj.leetcode.com/problems/majority-element/) | [C++](./LeetCodeSolutions/majorityElement/majorityElement.cpp)|Easy|
+|168|[Excel Sheet Column Title](https://oj.leetcode.com/problems/excel-sheet-column-title/) | [C++](./LeetCodeSolutions/excelSheetColumnTitle/excelSheetColumnTitle.cpp)|Easy|
+|167|[Two Sum II - Input array is sorted](https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/) &hearts; | [C++](./LeetCodeSolutions/twoSum/twoSum.II.cpp)|Medium|
+|166|[Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/) | [C++](./LeetCodeSolutions/fractionToRecurringDecimal/fractionToRecurringDecimal.cpp)|Medium|
+|165|[Compare Version Numbers](https://oj.leetcode.com/problems/compare-version-numbers/) | [C++](./LeetCodeSolutions/compareVersionNumbers/compareVersionNumbers.cpp)|Easy|
+|164|[Maximum Gap](https://oj.leetcode.com/problems/maximum-gap/) | [C++](./LeetCodeSolutions/maximumGap/maximumGap.cpp)|Hard|
+|163|[Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/) &hearts; | [C++](./LeetCodeSolutions/missingRanges/missingRanges.cpp)|Medium|
+|162|[Find Peak Element](https://oj.leetcode.com/problems/find-peak-element/) | [C++](./LeetCodeSolutions/findPeakElement/findPeakElement.cpp)|Medium|
+|161|[One Edit Distance](https://oj.leetcode.com/problems/one-edit-distance/)&hearts; | [C++](./LeetCodeSolutions/oneEditDistance/oneEditDistance.cpp)|Medium|
+|160|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/) | [C++](./LeetCodeSolutions/intersectionOfTwoLinkedLists/intersectionOfTwoLinkedLists.cpp)|Easy|
+|159|[Longest Substring with At Most Two Distinct Characters](https://oj.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) &hearts; | [C++](./LeetCodeSolutions/longestSubstringWithAtMostTwoDistinctCharacters/longestSubstringWithAtMostTwoDistinctCharacters.cpp)|Hard|
+|158|[Read N Characters Given Read4 II - Call multiple times](https://oj.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) &hearts; | [C++](./LeetCodeSolutions/readNCharactersGivenRead4/readNCharactersGivenRead4.II.cpp)|Hard|
+|157|[Read N Characters Given Read4](https://oj.leetcode.com/problems/read-n-characters-given-read4/) &hearts; | [C++](./LeetCodeSolutions/readNCharactersGivenRead4/readNCharactersGivenRead4.cpp)|Easy|
+|156|[Binary Tree Upside Down](https://oj.leetcode.com/problems/binary-tree-upside-down/) &hearts; | [C++](./LeetCodeSolutions/binaryTreeUpsideDown/binaryTreeUpsideDown.cpp)|Medium|
+|155|[Min Stack](https://oj.leetcode.com/problems/min-stack/)| [C++](./LeetCodeSolutions/minStack/minStack.cpp)|Easy|
+|154|[Find Minimum in Rotated Sorted Array II](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)| [C++](./LeetCodeSolutions/findMinimumInRotatedSortedArray/findMinimumInRotatedSortedArray.II.cpp)|Hard|
+|153|[Find Minimum in Rotated Sorted Array](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/)| [C++](./LeetCodeSolutions/findMinimumInRotatedSortedArray/findMinimumInRotatedSortedArray.cpp)|Medium|
+|152|[Maximum Product Subarray](https://oj.leetcode.com/problems/maximum-product-subarray/)| [C++](./LeetCodeSolutions/maximumProductSubarray/maximumProductSubarray.cpp)|Medium|
+|151|[Reverse Words in a String](https://oj.leetcode.com/problems/reverse-words-in-a-string/)| [C++](./LeetCodeSolutions/reverseWordsInAString/reverseWordsInAString.cpp)|Medium|
+|150|[Evaluate Reverse Polish Notation](https://oj.leetcode.com/problems/evaluate-reverse-polish-notation/)| [C++](./LeetCodeSolutions/evaluateReversePolishNotation/evaluateReversePolishNotation.cpp)|Medium|
+|149|[Max Points on a Line](https://oj.leetcode.com/problems/max-points-on-a-line/)| [C++](./LeetCodeSolutions/maxPointsOnALine/maxPointsOnALine.cpp)|Hard|
+|148|[Sort List](https://oj.leetcode.com/problems/sort-list/)| [C++](./LeetCodeSolutions/sortList/sortList.cpp)|Medium|
+|147|[Insertion Sort List](https://oj.leetcode.com/problems/insertion-sort-list/)| [C++](./LeetCodeSolutions/insertionSortList/insertionSortList.cpp)|Medium|
+|146|[LRU Cache](https://oj.leetcode.com/problems/lru-cache/)| [C++](./LeetCodeSolutions/LRUCache/LRUCache.cpp), [Java](./algorithms/java/src/lruCache/LRUCache.java)|Hard|
+|145|[Binary Tree Postorder Traversal](https://oj.leetcode.com/problems/binary-tree-postorder-traversal/)| [C++](./LeetCodeSolutions/binaryTreePostorderTraversal/binaryTreePostorderTraversal.cpp)|Hard|
+|144|[Binary Tree Preorder Traversal](https://oj.leetcode.com/problems/binary-tree-preorder-traversal/)| [C++](./LeetCodeSolutions/binaryTreePreorderTraversal/binaryTreePreorderTraversal.cpp)|Medium|
+|143|[Reorder List](https://oj.leetcode.com/problems/reorder-list/)| [C++](./LeetCodeSolutions/reorderList/reorderList.cpp)|Medium|
+|142|[Linked List Cycle II](https://oj.leetcode.com/problems/linked-list-cycle-ii/)| [C++](./LeetCodeSolutions/linkedListCycle/linkedListCycle.II.cpp)|Medium|
+|141|[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)| [C++](./LeetCodeSolutions/linkedListCycle/linkedListCycle.cpp)|Medium|
+|140|[Word Break II](https://oj.leetcode.com/problems/word-break-ii/)| [C++](./LeetCodeSolutions/wordBreak/wordBreak.II.cpp)|Hard|
+|139|[Word Break](https://oj.leetcode.com/problems/word-break/)| [C++](./LeetCodeSolutions/wordBreak/wordBreak.cpp)|Medium|
+|138|[Copy List with Random Pointer](https://oj.leetcode.com/problems/copy-list-with-random-pointer/)| [C++](./LeetCodeSolutions/copyListWithRandomPointer/copyListWithRandomPointer.cpp)|Hard|
+|137|[Single Number II](https://oj.leetcode.com/problems/single-number-ii/)| [C++](./LeetCodeSolutions/singleNumber/singleNumber.II.cpp)|Medium|
+|136|[Single Number](https://oj.leetcode.com/problems/single-number/)| [C++](./LeetCodeSolutions/singleNumber/singleNumber.cpp)|Medium|
+|135|[Candy](https://oj.leetcode.com/problems/candy/)| [C++](./LeetCodeSolutions/candy/candy.cpp)|Hard|
+|134|[Gas Station](https://oj.leetcode.com/problems/gas-station/)| [C++](./LeetCodeSolutions/gasStation/gasStation.cpp)|Medium|
+|133|[Clone Graph](https://oj.leetcode.com/problems/clone-graph/)| [C++](./LeetCodeSolutions/cloneGraph/cloneGraph.cpp)|Medium|
+|132|[Palindrome Partitioning II](https://oj.leetcode.com/problems/palindrome-partitioning-ii/)| [C++](./LeetCodeSolutions/palindromePartitioning/palindromePartitioning.II.cpp)|Hard|
+|131|[Palindrome Partitioning](https://oj.leetcode.com/problems/palindrome-partitioning/)| [C++](./LeetCodeSolutions/palindromePartitioning/palindromePartitioning.cpp)|Medium|
 |130|[Surrounded Regions](https://oj.leetcode.com/problems/surrounded-regions/)| [C++](./LeetCodeSolutions/surroundedRegions/surroundedRegions.cpp)|Medium|
 |129|[Sum Root to Leaf Numbers](https://oj.leetcode.com/problems/sum-root-to-leaf-numbers/)| [C++](./LeetCodeSolutions/sumRootToLeafNumber/sumRootToLeafNumber.cpp)|Medium|
 |128|[Longest Consecutive Sequence](https://oj.leetcode.com/problems/longest-consecutive-sequence/)| [C++](./LeetCodeSolutions/longestConsecutiveSequence/longestConsecutiveSequence.cpp)|Hard|
