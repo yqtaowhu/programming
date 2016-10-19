@@ -39,55 +39,35 @@
  * 
  *               
  **********************************************************************************/
-
-
+//每次删除入度为0的点
 class Solution {
 public:
-
-    bool hasCycle(int n, vector<int>& explored, vector<int>& path, map<int, vector<int>>& graph) {
-        
-        for(int i=0; i<graph[n].size(); i++){
-            
-            //detect the cycle
-            if ( path[graph[n][i]] ) return true;
-            
-            //set the marker
-            path[graph[n][i]] = true;
-            
-            if (hasCycle(graph[n][i], explored, path, graph)) {
-                return true;
+    vector<int>map[100010];
+    bool toposort(vector<int>& indegree) {
+        queue<int> q;
+        for (int i=0;i<indegree.size();i++) 
+            if (indegree[i]==0) q.push(i);
+        int sum=0;
+        while (!q.empty()) {
+            int k=q.front();
+            q.pop();
+            sum++;
+            for (int i=0;i<map[k].size();i++) {
+                int temp=map[k][i];
+                if (--indegree[temp]==0) q.push(temp);
             }
-            //backtrace reset
-            path[graph[n][i]] = false;
         }
-        //no cycle found, mark this node can finished!
-        explored[n] = true;
-        return false;
-        
+        return sum==indegree.size();
     }
-
     bool canFinish(int numCourses, vector<pair<int, int>>& prerequisites) {
-        
-        //using map to stroe the graph, it's easy to search the edge for each node
-        //the bool in pair means it is explored or not
-        map<int, vector<int>> graph;
-        for(int i=0; i<prerequisites.size(); i++){
-            graph[prerequisites[i].first].push_back( prerequisites[i].second );
-        }
-        
-        //explored[] is used to record the node already checked!
-        vector<int> explored(numCourses, false);
-        
-        //path[] is used to check the cycle during DFS
-        vector<int> path(numCourses, false);
-        
-        for(int i=0; i<numCourses; i++){
-            
-            if (explored[i]) continue;
-            if (hasCycle(i, explored, path, graph)) return false;
-            
-
-        }
-        return true;
+       int n=prerequisites.size();
+       vector<int> indegree(numCourses,0);
+       for (int i=0;i<n;i++) {
+           int u=prerequisites[i].first;
+           int v=prerequisites[i].second;
+           map[u].push_back(v);
+           indegree[v]++;
+       }
+       return toposort(indegree);
     }
 };
