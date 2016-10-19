@@ -23,3 +23,18 @@ public:
         return maxLen;
     }
 };
+// a esay way
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        map<char,int>m;
+        int beg=0,end=0,counter=0,count=0;
+        while (end<s.size()) {
+            if (m[s[end++]]++>0) counter++;
+            while (counter>0) 
+                if (m[s[beg++]]-->1) counter--;
+            count=max(count,end-beg);
+        }
+        return count;
+    }
+};
