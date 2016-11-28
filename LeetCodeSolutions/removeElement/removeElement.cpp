@@ -15,9 +15,9 @@
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-        for (auto it=nums.begin();it!=nums.end();) {
+        for (auto it=nums.begin();it!=nums.end();) {  //注意迭代器的后移问题
             if (*it==val) {
-                nums.erase(it);
+                it=nums.erase(it);    //在进行删除数据是一定要注意。。。。
             }
             else
                 ++it;
