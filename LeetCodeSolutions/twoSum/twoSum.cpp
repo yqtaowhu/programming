@@ -14,32 +14,40 @@
 *UPDATE (2016/2/13):
 *The return format had been changed to zero-based indices. Please read the above updated description carefully.
 *******************************************************************************************************************/
-#include <iostream>
-#include <vector>
-#include <unordered_map>
-using namespace std;
-vector<int> twoSum(vector<int>& nums, int target) {
-	unordered_map<int, int> m;     //using hash tabel <value,position>=<key,value>
-	vector<int>result;
-	for (int i = 0; i<nums.size(); i++)
-	{
-		if (m.find(nums[i]) == m.end())  // not found the second one
-			m[target - nums[i]] = i;
-		else
-		{
-			result.push_back(m[nums[i]]);
-			result.push_back(i);
-			break;        //You may assume that each input would have exactly one solution
-		}
-	}
-	return result;
-}
-// test
-int main()
-{
-	vector<int>nums = { 2,7,11,15 };
-	int target = 9;
-	vector<int>result = twoSum(nums, target);
-	for (auto c : result)
-		cout << c << " " << endl;
-}
+//first solution ,O(N^2)
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+       int n=nums.size();
+       vector<int> res;
+       for (int i=0;i<n-1;i++) {
+           for (int j=i+1;j<n;j++) {
+               if (nums[i]+nums[j]==target) {
+                   res.push_back(i);
+                   res.push_back(j);
+                   break;
+               }
+           }
+       }
+       return res;
+    }
+};
+//solution 2 : O(N)
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+       int n=nums.size();
+       vector<int> res;
+       unordered_map<int,int> map;
+       for (int i=0;i<n;i++) {
+           if (map.find(nums[i])==map.end())
+              map[target-nums[i]]=i;
+           else {
+               res.push_back(map[nums[i]]);
+               res.push_back(i);
+               break;
+           }
+       }
+       return res;
+    }
+};
