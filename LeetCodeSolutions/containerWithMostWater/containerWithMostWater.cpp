@@ -21,7 +21,7 @@ public:
     while (i < j) {
         int h = min(height[i], height[j]);
         water = max(water, (j - i) * h);
-        while (height[i] <= h && i < j) i++;
+        while (height[i] <= h && i < j) i++;    //find greater h
         while (height[j] <= h && i < j) j--;
     }
     return water;
