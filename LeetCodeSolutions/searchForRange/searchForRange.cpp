@@ -16,6 +16,9 @@
 * 
 *               
 **********************************************************************************/
+//solution 1
+//1. first binary_search find the pos of target
+//2. find the pos left and pos right using binary_search
 class Solution {
 public:
     int binary_search(vector<int>& nums, int low, int high, int key){
@@ -50,33 +53,26 @@ public:
         return v;
     }
 };
-
-void printVector( vector<int>&  pt)
-{
-    cout << "{ ";
-    for(int j=0; j<pt.size(); j++){
-        cout << pt[j] << " ";
+//solution 2:reference:https://discuss.leetcode.com/topic/5891/clean-iterative-solution-with-two-binary-searches-with-explanation/2
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        int i=0,j=nums.size()-1;
+        vector<int>res(2,-1);
+        while (i<j) {
+            int mid=(i+j)/2;
+            if (nums[mid]<target) i=mid+1;
+            else j=mid;
+        }
+        if (nums[i]!=target) return res;
+        else res[0]=i;
+        j=nums.size()-1;
+        while (i<j) {
+            int mid=(i+j)/2+1;
+            if (nums[mid]>target) j=mid-1;
+            else i=mid;
+        }
+        res[1]=j;
+        return res;
     }
-    cout << "} " << endl;
-}
-
-
-int main()
-{
-    const int cnt=6;
-    int a[cnt] ={5, 7, 7, 8, 8, 10};
-
-    vector<int> v;
-    v = searchRange(a, cnt, 8);     
-    printVector(v);    
-
-
-    int b[cnt] ={5, 5, 5, 8, 8, 10};
-    v = searchRange(b, cnt, 5);     
-    printVector(v);    
-
-    int c[cnt] ={5, 5, 5, 5, 5, 5};
-    v = searchRange(c, cnt, 5);     
-    printVector(v);    
-    return 0;
-}
+};
