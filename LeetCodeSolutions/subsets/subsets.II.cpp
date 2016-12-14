@@ -48,19 +48,16 @@ void subsets(vector<int>& nums, vector<int>& tmp, vector<vector<int>>& res, int 
 //iterater
 class Solution {
 public:
-    vector<vector<int>> subsetsWithDup(vector<int>& nums) {
-		sort(nums.begin(), nums.end());
-		vector<vector<int>> ret(1, vector<int>());
-		int size = 0, startIndex = 0;
-		for (int i = 0; i<nums.size(); i++) {
-			startIndex = (i>= 1 && nums[i] == nums[i - 1]) ? size : 0;
-			size = ret.size();
-			for (int j = startIndex; j<size; j++) {
-				vector<int> tmp = ret[j];
-				tmp.push_back(nums[i]);
-				ret.push_back(tmp);
-			}
-		}
-		return ret;
-	}
+     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
+         vector<vector<int>> ret;
+         ret.push_back(vector<int>());
+         sort(nums.begin(), nums.end());
+         vector<vector<int>> sub;
+         for (int i = 0; i < nums.size(); ++i) {
+             if (i == 0 || nums[i] != nums[i-1]) sub = ret;
+             for (auto& j:sub) j.push_back(nums[i]);
+             ret.insert(ret.end(), sub.begin(), sub.end());
+         }
+         return ret;
+}
 };
