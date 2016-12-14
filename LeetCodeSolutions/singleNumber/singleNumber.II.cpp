@@ -1,7 +1,7 @@
 // Date   : 2016.08.24
 // Author : yqtao
 // https://github.com/yqtaowhu
-
+//reference:https://discuss.leetcode.com/topic/11877/detailed-explanation-and-generalization-of-the-bitwise-operation-method-for-single-numbers
 /********************************************************************************** 
 * 
 * Given an array of integers, every element appears three times except for one. Find that single one.
