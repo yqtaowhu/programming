@@ -35,7 +35,7 @@ int main(){   
                 if(s[i]=='(')              
                     p++;           
                 else               
-                    vec.push_back(k++);   
+                    vec.push_back(k++); //第几个数字   
             }          
             else{              
                 if(++q>p)break;  //测试用例中有‘)’个数多于‘(’个数的情况，故加入该判断语句。           
@@ -51,4 +51,33 @@ int main(){   
         cout<<sum<<endl;  
     }    
     return 0;
+}
+// 计算矩阵相乘
+#include<iostream>
+#include<vector>
+using namespace std;
+void getMat(vector<vector<int>>& v) {  
+    for (int i = 0; i < v.size(); i++)    
+        for (int j = 0; j < v[0].size(); j++)  
+            cin >> v[i][j];}
+int main() {  
+    int m, n, k;    
+    while (cin >> m >> n >> k) {  
+        vector<vector<int>> A(m, vector<int>(n, 0));   
+        vector<vector<int>> B(n, vector<int>(k, 0));   
+        vector<vector<int>> res(m, vector<int>(k, 0));  
+        getMat(A);        
+        getMat(B);     
+		//核心程序
+        for (int i = 0; i < m; i++)  
+            for (int j = 0; j < k; j++)  
+                for (int l = 0; l < n; l++)  
+                    res[i][j] += A[i][l] * B[l][j]; 
+        for (int i = 0; i < res.size(); i++) {
+			for (int j = 0; j < res[0].size(); j++) {
+				j == 0 ? cout << res[i][j] : cout << " " << res[i][j];
+			}
+			cout << endl;
+		}
+    }
 }
