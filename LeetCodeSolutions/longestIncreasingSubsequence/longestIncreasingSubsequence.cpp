@@ -42,3 +42,17 @@ public:
         return v.size();
     }
 };
+//同时求出dp的
+    int lengthOfLIS(vector<int>& nums) {
+        int n=nums.size();
+        vector<int>dp(n,1);
+        for(int i=0;i<n;i++){
+            for(int j=i-1;j>=0;j--){
+                if(nums[i]>nums[j]&&dp[i]<dp[j]+1)
+                    dp[i]=dp[j]+1;
+            }
+        }
+        auto t=max_element(dp.begin(),dp.end());
+        return t->first;
+        
+    }
