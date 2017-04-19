@@ -1,6 +1,6 @@
-#LeetCode
+# LeetCode
 
-##LeetCode Algorithm
+## LeetCode Algorithm
 
 | Title | Solution | Difficulty |
 | ----- | -------- | ---------- |
