@@ -7,7 +7,7 @@ struct ListNode {
 
 	}
 };
-// Ò»¶¨Òª¼Ç×¡°¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
+// ä¸€å®šè¦è®°ä½å•Šï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
 ListNode* reverseList(ListNode* head) {
 	if (!head) return nullptr;
 	ListNode preHead(0), *pre = &preHead;
@@ -17,9 +17,22 @@ ListNode* reverseList(ListNode* head) {
 		ListNode* nxt = cur->next;
 		cur->next = nxt->next;
 		nxt->next = pre->next;
-		pre->next = nxt;         //Ò»¶¨²»Òª¸ã´íÁË
+		pre->next = nxt;         //ä¸€å®šä¸è¦æžé”™äº†
 	}
 	return preHead.next;
+}
+//another way
+ListNode* reverseList1(ListNode* head){
+    if(!head||!head->next) return head;
+    ListNode* pre= head,*cur=head->next;
+    pre->next = nullptr;
+    while(cur) {
+        ListNode* nxt = cur->next;
+        cur->next = pre;
+        pre = cur;
+        cur = nxt;
+    }
+    return pre;
 }
 int main() {
 	ListNode* p1 = new ListNode(1);
@@ -42,7 +55,7 @@ int main() {
 	cout << endl;
 	return 0;
 }
-//·´×ªm-nµÄÇøÓò£¬Í¬ÉÏÃæ·Ç³£µÄÀàËÆ
+//åè½¬m-nçš„åŒºåŸŸï¼ŒåŒä¸Šé¢éžå¸¸çš„ç±»ä¼¼
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int m, int n) {
