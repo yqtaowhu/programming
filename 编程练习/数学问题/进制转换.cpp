@@ -1,4 +1,4 @@
-//将十进制转换成n进制
+//杩涘埗杞崲
 #include<iostream>
 #include<string>
 #include<algorithm>
