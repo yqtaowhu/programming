@@ -1,4 +1,4 @@
-//大数相加
+//麓贸脢媒脧脿录脫.
 string bigAdd(string a, string b) {
 	int m = a.size(), n = b.size();
 	if (m<n) return bigAdd(b, a);
@@ -22,7 +22,7 @@ string bigAdd(string a, string b) {
 	return "0";
 }
 
-//大数相乘
+//麓贸脢媒脧脿鲁脣
 class Solution {
 public:
     string multiply(string num1, string num2) {
