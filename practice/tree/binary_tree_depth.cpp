@@ -1,11 +1,10 @@
-问题1： 求二叉树的深度
 
-//1. 递归
+//1. binary tree depth recusive
 	int TreeDepth(TreeNode* pRoot){
-    	return pRoot ?　max(TreeDepth(pRoot->left),TreeDepth(pRoot->right)) + 1 :　0;
+    	return pRoot ? max(TreeDepth(pRoot->left),TreeDepth(pRoot->right)) + 1 : 0;
 	}
 
-//2. 循环，用队列实现，层序遍历的方法
+//2.loop traversal
 
  int TreeDepth(TreeNode* pRoot) {
         if (!pRoot) return 0;
@@ -24,9 +23,8 @@
         return depth;
     }
  
- 问题2： 求二叉树的最小深度，最小深度为根到叶子节点的最小路径
  
- //1. 递归
+ //1.min depth of tree ,this mean root->left && root->right nullptr,this is left node 
  
   int minDepth(TreeNode* root) {
         if(!root)  return 0;
@@ -35,7 +33,7 @@
         else      
             return max(minDepth(root->left),minDepth(root->right))+1;
     }
-//2. 常规解法，层序遍历，直到叶子节点为止	
+//2. loop travesal
 	  int minDepth(TreeNode* root) {
         if (!root) return 0;
         queue<TreeNode*> que;
