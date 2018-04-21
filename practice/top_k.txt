@@ -1,0 +1,81 @@
+// Date   : 2016.10.25
+// Author : yqtao
+// https://github.com/yqtaowhu
+#include <iostream>
+#include<vector>
+#include<set>
+#include<algorithm>
+#include<functional>
+#include<queue>
+using namespace std;
+int partition(vector<int>& data, int left, int right) {
+    int i = left, j = right, pivot = data[left];
+    while (i < j) {
+        while (i < j&&data[j] >= pivot) j--;
+        data[i] = data[j];
+        while (i < j&&data[i] <= pivot) i++;
+        data[j] = data[i];
+    }
+    data[i] = pivot;
+    return i;
+}
+vector<int> getLeastNums(vector<int>& data, int k) {
+    int n = data.size();
+    if (n <= 0 || k <= 0 || k > n) return vector<int>();
+    int left = 0, right = n - 1;
+    int index = partition(data, left,right);
+    while (index != k - 1) {
+        if (index > k - 1) {
+            right = index - 1;
+            index = partition(data, left, right);
+        }
+        else {
+            left = index + 1;
+            index = partition(data, left, right);
+        }
+    }
+    vector<int>res(data.begin(), data.begin() + k);
+    return res;
+}
+//solution 2
+//特别注意的一点multiset，和set的不同
+//mulgiset可以具有重复值，而set不是，二者都是基于红黑书实现的
+vector<int> getLeastNums2(vector<int>& data, int k) {
+    int n = data.size();
+    if (n <= 0 || k <= 0 || k > n) return vector<int>();
+    multiset<int,greater<int>> st;
+    auto it = data.begin();
+    for (; it != data.end(); ++it) {
+        if (st.size() < k) st.insert(*it);
+        else {
+            auto iter = st.begin();
+            if (*it < *iter) {
+                st.erase(iter);
+                st.insert(*it);
+            }
+        }
+    }
+    vector<int>res(st.begin(), st.end());
+    return res; 
+}
+//优先队列，本质是根实现的
+vector<int> getLeastNums3(vector<int>& data, int k) {
+    int n = data.size();
+    if (n <= 0 || k <= 0 || k > n) return vector<int>();
+    priority_queue<int,vector<int>,greater<int>> que;  //greater表示的是小根堆，一定要注意了
+    for (int i = 0; i < n; i++)
+        que.push(data[i]);
+    vector<int> res;
+    while (res.size() < k) {
+        res.push_back(que.top());
+        que.pop();
+    }
+    return res;
+}
+int main() {
+    vector<int> data = { 1,3,5,7,23,22,5,78,7,0 };
+    vector<int> res = getLeastNums3(data,5);
+    for (auto c : res)
+        cout << c << " ";
+    cout << endl;
+}

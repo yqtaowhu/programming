@@ -78,7 +78,7 @@ public:
 }
 }
 ;
-//无重复数字
+//重复数字
 class Solution {
 public:
     vector<vector<int>> permuteUnique(vector<int>& nums) {
@@ -87,7 +87,7 @@ public:
        if (nums.size() <2)  return vv;  
        int pos=0;
        while(pos<nums.size()-1){
-       int size = vv.size();
+		  int size = vv.size();
           for(int i=0; i<size; i++){
             //sort the array, so that the same number will be together
            sort(vv[i].begin()+pos, vv[i].end());
