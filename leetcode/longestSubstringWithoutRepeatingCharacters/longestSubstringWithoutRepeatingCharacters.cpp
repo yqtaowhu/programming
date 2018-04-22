@@ -15,6 +15,7 @@ public:
         int len=s.size(),maxLen=0,lastRepeatPos=-1;
         map <char,int>m;
         for (int i=0;i<len;i++) {
+			//找到不重复的初始位置即可解决。。。。。
             if (m.find(s[i])!=m.end()&&lastRepeatPos<m[s[i]])
                 lastRepeatPos=m[s[i]];
             maxLen=max(i-lastRepeatPos,maxLen);
